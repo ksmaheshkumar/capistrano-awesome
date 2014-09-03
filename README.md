@@ -21,7 +21,7 @@ If your version is greater than or equal to 3.2.1, use `.rake` as an extension o
     /home/joridos/Documents/bitbucket/project/lib/capistrano/tasks/other_task.cap
 
 Passing parameter to task on the command line.
-
+``` ruby
     namespace :project do
       desc 'Print a word'
       task :print do
@@ -30,6 +30,8 @@ Passing parameter to task on the command line.
         end
       end
     end
+```
+
 ``` shell    
 $cap stage project:print word=foo
 ```
